@@ -4,5 +4,6 @@ from .serializers import UserSerializer
 
 
 class UserRegistrationView(CreateAPIView):
+    permission_classes = []
     queryset = User.objects.all()
     serializer_class = UserSerializer
